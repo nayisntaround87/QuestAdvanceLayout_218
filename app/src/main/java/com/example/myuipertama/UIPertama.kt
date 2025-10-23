@@ -54,6 +54,7 @@ fun ActivitasPertama(modifier: Modifier) {
                     painter = gambar,
                     contentDescription = null,
                     modifier = Modifier.size(100.dp).padding(5.dp)
+                        .align(Alignment.CenterVertically)
                 )
                 Spacer(modifier = Modifier.width(30.dp))
                 Column() {
