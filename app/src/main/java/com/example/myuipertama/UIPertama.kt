@@ -85,7 +85,7 @@ fun ActivitasPertama(modifier: Modifier) {
                 fontSize = 14.sp,
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
-                    .padding(bottom = 50.dp)
+                    .padding(bottom = 40.dp)
             )
         }
     }
