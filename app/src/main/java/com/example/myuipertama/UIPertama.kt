@@ -37,7 +37,10 @@ fun ActivitasPertama(modifier: Modifier) {
             color = Color.Green
         )
         Text(text =  stringResource(id = R.string.univ),
-            fontSize = 22.sp)
+            fontSize = 22.sp,
+            color = Color.Gray,
+            fontWeight = FontWeight.Medium
+            )
         Spacer(modifier = Modifier.height(height = 25.dp))
         Card (modifier = Modifier
             .fillMaxWidth(fraction = 1f)
