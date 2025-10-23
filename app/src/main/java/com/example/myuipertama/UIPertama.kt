@@ -41,7 +41,7 @@ fun ActivitasPertama(modifier: Modifier) {
             color = Color.Gray,
             fontWeight = FontWeight.Medium
             )
-        Spacer(modifier = Modifier.height(height = 20.dp))
+        Spacer(modifier = Modifier.height(height = 25.dp))
         Card (modifier = Modifier
             .fillMaxWidth(fraction = 1f)
             .padding(all = 12.dp),
