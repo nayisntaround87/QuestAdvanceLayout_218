@@ -1,6 +1,7 @@
 package com.example.myuipertama
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -23,7 +24,6 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import java.lang.reflect.Modifier
 
 @Composable
 fun ActivitasPertama(modifier: Modifier) {
@@ -32,7 +32,7 @@ fun ActivitasPertama(modifier: Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(text = stringResource(id = R.string.prodi),
-            fontsize = 35.sp,
+            fontSize = 35.sp,
             fontWeight = FontWeight.Bold)
         Text(text =  stringResource(id = R.string.univ),
             fontSize = 22.sp)
@@ -59,10 +59,25 @@ fun ActivitasPertama(modifier: Modifier) {
                         color = Color.White,
                         modifier = Modifier.padding(top = 15.dp)
                     )
-
+                    Text(
+                        stringResource(R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
                 }
             }
         }
-
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+        ) {
+            Text(
+                stringResource(R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
+        }
     }
 }
